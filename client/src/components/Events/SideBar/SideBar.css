@@ -1,0 +1,23 @@
+.form-panel {
+    /* the look */
+    background-color: rgba(255, 255, 0, .3);
+    border-left: 2px gray solid;
+
+    /* size */
+    height: 660px;
+    width: auto;
+
+    /* spacing */
+}
+
+h2 {
+    margin-top: 0px;
+    text-align: center;
+    color: #fff;
+}
+
+.btn {
+    margin: 30px 55px 0px 55px;
+    width: 200px;
+    background-color: #000;
+}
