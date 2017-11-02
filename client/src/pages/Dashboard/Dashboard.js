@@ -24,17 +24,7 @@ const Dashboard = () =>
 
                 {/* add two rows of list elements */}
 
-                <Row> 
-                    {/* <DumbList />  */}
-                    <ul>
-                        <li>Assignment #0</li>
-                        <li>Assignment #0</li>
-                        <li>Assignment #0</li>
-                        <li>Assignment #0</li>
-                        <li>Assignment #0</li>
-                    </ul>
-                
-                </Row>
+                <Row> <DumbList /> </Row>
 
                 <Row> <DumbList /> </Row>
 
