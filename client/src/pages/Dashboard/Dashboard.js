@@ -24,9 +24,17 @@ const Dashboard = () =>
 
                 {/* add two rows of list elements */}
 
-                <Row> <DumbList /> </Row>
+                <Row>
+                    <DumbList 
+                        listName="Submitted Assignments"
+                    />
+                </Row>
 
-                <Row> <DumbList /> </Row>
+                <Row>
+                    <DumbList 
+                        listName="Under Expert Review"
+                    />
+                </Row>
 
             </Col>
 
