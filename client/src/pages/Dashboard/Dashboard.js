@@ -27,12 +27,14 @@ const Dashboard = () =>
                 <Row>
                     <DumbList 
                         listName="Submitted Assignments"
+                        approved="no"
                     />
                 </Row>
 
                 <Row>
                     <DumbList 
                         listName="Under Expert Review"
+                        approved="yes"
                     />
                 </Row>
 
