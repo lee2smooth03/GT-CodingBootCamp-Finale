@@ -54,11 +54,26 @@ const DemoAssign = [
         date: new Date(Date.now())
     }];
 
-const DummyList =(props) =>
+const DummyList =(props) =>(
     <div className="panel panel-default">
 
         <div className="panel-heading">{props.listName}</div>
         <div className="panel-body">
+
+            { props.reviewed ==="no" ?
+            <List>
+                {DemoAssign.filter(assign =>assign.reviewed == 0).map(item=>(
+                    <ListItem>{item.category} by {item.challenger}</ListItem>
+                ))}
+            </List>
+            :
+            <List>
+            {DemoAssign.filter(assign =>assign.reviewed > 0).map(item=>(
+                <ListItem>{item.category} by {item.challenger}</ListItem>
+            ))}
+            </List>
+            }
+
             {/* <ul>
                         <li>Assignment #0</li>
                         <li>Assignment #0</li>
@@ -66,15 +81,16 @@ const DummyList =(props) =>
                         <li>Assignment #0</li>
                         <li>Assignment #0</li>
             </ul> */}
-            <List>
+            {/* <List>
                 {DemoAssign.map(Assignment =>{
                     <ListItem key={Assignment.id}>
-                        <strong>{Assignment.category} by {Assignment.challenger}</strong>
+                         <strong>{Assignment.category} by {Assignment.challenger}</strong>
                     </ListItem>
                 })}
-            </List>
+            </List> */}
 
         </div>
 
     </div>
+);
 export default DummyList;
